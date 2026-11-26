@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500"><defs><filter id="f" x="-15%" y="-15%" width="130%" height="130%"><feGaussianBlur stdDeviation="16"/></filter></defs><path filter="url(#f)" fill="#000" d="M305 34C428 26 546 86 568 196c22 112-46 226-162 258-108 30-236 20-314-52C20 336 24 214 82 136 136 64 206 38 305 34Z"/></svg>

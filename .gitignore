@@ -1,0 +1,6 @@
+# dist/ is committed on purpose: it is the static preview that Vercel publishes.
+.DS_Store
+Thumbs.db
+desktop.ini
+.vercel/
+*.log

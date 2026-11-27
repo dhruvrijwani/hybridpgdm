@@ -11,7 +11,7 @@
           </div>
         <?php endforeach; ?>
         <p class="acc__source">By
-          <?php foreach ($s['rank_source'] as $i => $src): ?><?= $i ? ' and ' : ' ' ?><span class="acc__mark ph" title="Official logo to come"><?= e($src) ?></span><?php endforeach; ?>
+          <?php foreach ($s['rank_source'] as $i => $src): ?><?= $i ? '<span>and</span>' : '' ?><img class="acc__src-logo acc__src-logo--<?= $i + 1 ?>" src="<?= asset('img/' . $src['logo']) ?>" alt="<?= e($src['name']) ?>" loading="lazy"><?php endforeach; ?>
         </p>
       </div>
       <ul class="acc__seals">

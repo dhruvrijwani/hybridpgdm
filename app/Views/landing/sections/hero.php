@@ -8,11 +8,11 @@ $tri = preg_replace('/^<svg /', '<svg class="hero__tri" aria-hidden="true" focus
   <div class="wrap hero__grid">
 
     <div class="hero__top">
-      <p class="hero__label"><?= e($s['label']) ?></p>
-      <h1 class="hero__title" id="hero-title">
+      <h1 class="hero__label" id="hero-title"><?= e($s['label']) ?></h1>
+      <p class="hero__title">
         <img class="hero__wordmark" src="<?= asset('img/genwe-wordmark.svg') ?>" alt="<?= e($s['h1']) ?>" width="493" height="65">
         <span class="hero__sub"><?= e($s['sub']) ?></span>
-      </h1>
+      </p>
     </div>
 
     <div class="hero__visual" aria-hidden="true">

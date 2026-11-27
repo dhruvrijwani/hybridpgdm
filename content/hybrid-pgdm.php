@@ -36,7 +36,7 @@ return [
 
     /* 1 ─ Hero (Figma: "Landing page final") */
     'hero' => [
-        'label'    => 'Welingkar Institute of Management',
+        'label'    => 'Welingkar Institute of Management',   // the page's H1
         'h1'       => 'We are GenWe',
         'sub'      => '360° Hybrid PGDM',
         'chips'    => ['2-Year Programme', 'AICTE Approved', '18 Specialisations', 'AI-first curriculum'],
@@ -98,7 +98,10 @@ return [
             ['value' => '1',  'label' => 'Private Business School in Mumbai'],
             ['value' => '14', 'label' => 'Private Business School in India'],
         ],
-        'rank_source' => ['Business India', 'Outlook Money'],   // official logos to be supplied
+        'rank_source' => [
+            ['name' => 'Business India', 'logo' => 'logo-business-india.webp'],
+            ['name' => 'Outlook Money',  'logo' => 'logo-outlook-money.webp'],
+        ],
         'seals'    => [
             ['logo' => 'logo-nirf.webp',  'name' => 'NIRF 2025',  'status' => 'Recognised'],
             ['logo' => 'logo-acbsp.webp', 'name' => 'ACBSP Accreditation', 'status' => '10 Years'],

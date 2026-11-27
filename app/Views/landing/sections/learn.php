@@ -31,7 +31,7 @@ $n = count($s['steps']);
 
       <header class="learn__head">
         <p class="kicker"><?= e($s['kicker']) ?></p>
-        <h2 class="h2 h2--xl" id="learn-title"><?= e($s['title']) ?></h2>
+        <h2 class="h2" id="learn-title"><?= e($s['title']) ?></h2>
         <p class="lead learn__lead"><?= e($s['lead']) ?></p>
       </header>
 

@@ -1,8 +1,13 @@
 <?php
-/** 01 Hero, from the client's Figma ("Landing page final"), without the black outlines. @var array $s */
+/**
+ * 01 Hero, from the client's Figma ("Landing page final" › "Final Design"), without the black outlines.
+ * The illustration follows the Figma frame point for point: the student, the triangle lattice
+ * (vectorised from the Figma artwork), the three programme tags and the three triangles on the right.
+ * @var array $s
+ */
 $crm = config('crm');
 $tri = @file_get_contents(APP_ROOT . '/public/assets/img/tri-cluster.svg') ?: '';
-$tri = preg_replace('/^<svg /', '<svg class="hero__tri" aria-hidden="true" focusable="false" ', $tri);
+$tri = preg_replace('/^<svg /', '<svg class="hero__tri" preserveAspectRatio="none" aria-hidden="true" focusable="false" ', $tri);
 ?>
 <section class="hero" id="apply" aria-labelledby="hero-title">
   <div class="wrap hero__grid">
@@ -10,19 +15,19 @@ $tri = preg_replace('/^<svg /', '<svg class="hero__tri" aria-hidden="true" focus
     <div class="hero__top">
       <h1 class="hero__label" id="hero-title"><?= e($s['label']) ?></h1>
       <p class="hero__title">
-        <img class="hero__wordmark" src="<?= asset('img/genwe-wordmark.svg') ?>" alt="<?= e($s['h1']) ?>" width="493" height="65">
+        <img class="hero__wordmark" src="<?= asset('img/genwe-wordmark.svg') ?>" alt="<?= e($s['h1']) ?>" width="521" height="70">
         <span class="hero__sub"><?= e($s['sub']) ?></span>
       </p>
     </div>
 
     <div class="hero__visual" aria-hidden="true">
-      <?= $tri ?>
-      <span class="hero__shadow"></span>
+      <span class="hero__shadow"></span><span class="hero__shadow hero__shadow--2"></span>
       <img class="hero__student" src="<?= asset('img/hero-student.webp') ?>" alt="" width="860" height="1207" fetchpriority="high">
-      <svg class="hero__mark" viewBox="0 0 54 60"><use href="#i-tri" x="27" y="0" width="27" height="30"/><use href="#i-tri" x="27" y="30" width="27" height="30"/><use href="#i-tri" x="0" y="15" width="28" height="31"/></svg>
+      <?= $tri ?>
+      <img class="hero__mark" src="<?= asset('img/tri-right.svg') ?>" alt="" width="56" height="62">
       <ul class="hero__tags">
         <?php foreach ($s['tags'] as $i => $tag): ?>
-          <li class="tag tag--<?= $i + 1 ?>"><span><?= e($tag) ?></span></li>
+          <li class="tag tag--<?= $i + 1 ?>"><span><?= e($tag) ?></span><svg class="tag__arrow" viewBox="0 0 138 117" preserveAspectRatio="none" focusable="false"><path class="tag__ghost" d="M35 2.5V114.5L132 58.5Z"/><path d="M16 0V117L117.3 58.5Z"/></svg></li>
         <?php endforeach; ?>
       </ul>
     </div>
@@ -41,13 +46,9 @@ $tri = preg_replace('/^<svg /', '<svg class="hero__tri" aria-hidden="true" focus
       </div>
       <ul class="hero__trust">
         <?php foreach ($s['trust'] as $t): ?>
-          <li><img src="<?= asset('img/' . $t['logo']) ?>" alt="<?= e($t['alt']) ?>" width="34" height="34"><span><?= e($t['text']) ?></span></li>
+          <li><img src="<?= asset('img/' . $t['logo']) ?>" alt="<?= e($t['alt']) ?>" width="48" height="48"><span><?= e($t['text']) ?></span></li>
         <?php endforeach; ?>
       </ul>
-      <div class="hero__cta">
-        <a class="btn btn--green" href="<?= e(apply_href()) ?>"><?= e($s['cta']) ?></a>
-        <a class="btn btn--purple" href="<?= e(brochure_href()) ?>"<?= config('brochure_url') ? ' download' : '' ?>><?= icon('download') ?><?= e($s['cta_alt']) ?></a>
-      </div>
     </div>
 
     <div class="hero__form" id="enquire">
@@ -57,6 +58,10 @@ $tri = preg_replace('/^<svg /', '<svg class="hero__tri" aria-hidden="true" focus
       </div>
     </div>
 
-    <p class="hero__seo"><?= e($s['seo_note']) ?></p>
+    <!-- under the logos on desktop and tablet, under the form on phones (placed by the grid) -->
+    <div class="hero__cta">
+      <a class="btn btn--green" href="<?= e(apply_href()) ?>"><?= e($s['cta']) ?></a>
+      <a class="btn btn--purple" href="<?= e(brochure_href()) ?>"<?= config('brochure_url') ? ' download' : '' ?>><?= icon('download') ?><?= e($s['cta_alt']) ?></a>
+    </div>
   </div>
 </section>

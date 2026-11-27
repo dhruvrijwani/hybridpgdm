@@ -1,7 +1,7 @@
 <?php /** 13 Specialisations: an 18-tile grid; on phones each tile opens to show its line. @var array $s */ ?>
 <section class="sec" id="specialisations" aria-labelledby="spec-title">
   <div class="wrap">
-    <header class="sec-head sec-head--split rv">
+    <header class="sec-head rv">
       <div>
         <p class="kicker"><?= e($s['kicker']) ?> <span class="pill"><?= e($s['badge']) ?></span></p>
         <h2 class="h2" id="spec-title"><?= e($s['title']) ?></h2>

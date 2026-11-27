@@ -1,14 +1,15 @@
-<?php /** 04 Harvard ManageMentor. @var array $s */ ?>
+<?php /** 04 Harvard ManageMentor: heading first, the logos right below it. @var array $s */ ?>
 <section class="sec sec--lav" id="harvard" aria-labelledby="harvard-title">
   <div class="wrap hbp">
     <div class="hbp__intro rv">
+      <p class="kicker"><?= e($s['kicker']) ?></p>
+      <?php $t = preg_split('/(?<=\.)\s+(?=[^.]+\.?$)/', $s['title'], 2); /* break before the last sentence */ ?>
+      <h2 class="h2" id="harvard-title"><?= e($t[0]) ?><?php if (isset($t[1])): ?><br class="hbp__br"> <?= e($t[1]) ?><?php endif; ?></h2>
       <div class="hbp__logos">
         <img src="<?= asset('img/logo-harvard-business-impact.webp') ?>" alt="Harvard Business Impact" width="56" height="65" loading="lazy">
         <span aria-hidden="true"></span>
         <img src="<?= asset('img/logo-harvard-managementor.webp') ?>" alt="Harvard ManageMentor" width="180" height="73" loading="lazy">
       </div>
-      <p class="kicker"><?= e($s['kicker']) ?></p>
-      <h2 class="h2" id="harvard-title"><?= e($s['title']) ?></h2>
       <p class="lead"><?= rich($s['intro']) ?></p>
       <div class="hbp__42" aria-hidden="true">
         <b>42</b>

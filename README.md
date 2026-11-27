@@ -43,6 +43,8 @@ Pages: `/` (landing page), `/thank-you` (after an enquiry; point the CRM redirec
 ## Editing
 
 - **Words, figures, FAQs:** `content/hybrid-pgdm.php`. Change the text between quotes, keep the keys. Allowed inline tags: `<b>`, `<em>`, `<br>`.
+- **SEO copy and keywords:** the `seo` block in the content file. It prints at the very bottom of the page, above the footer; add the client's keyword list to `keywords`.
+- **Writing style:** headings in sentence case (only names keep capitals). The programme name is "360° Hybrid PGDM"; "Welingkar PGDM Hybrid" is a search keyword and stays as written, without 360°.
 - **Section order, or hiding a section:** the `order` list at the top of the content file.
 - **Images:** `public/assets/img/`. Replace a file with one of the same name, or change the file name in the content file.
 - **Colours and spacing:** the variables at the top of `public/assets/css/main.css` (`--green`, `--purple`, `--lime`, …).
@@ -78,14 +80,14 @@ The server needs `mod_rewrite` (Drupal already uses it). `mod_expires`, `mod_def
 | Item | Where it shows | Now |
 |---|---|---|
 | Impact stories: videos, photos, quotes, names | Impact Stories | Placeholder text and stock-style photos from the Figma file |
-| Business India and Outlook Money logos | Recognition | Text marks |
 | Brochure PDF | Hero, phone bar | Opens the enquiry form |
 | ExtraaEdge form on welingkar.org | Hero | Uses form-24 from the Yangpoo account |
 | Industry-background figures | (not on this page) | Live page shares add up to 81% |
 
 ## Notes on the design
 
-- Hero: copied from Figma with the black outlines removed (soft borders instead). The wordmark's baked-in "360° HYRBID PGDM" typo is replaced by live text, "360° Hybrid PGDM".
+- Hero: copied from Figma ("Landing page final" › "Final Design") with the black outlines removed. The student, triangle lattice, tags and the three triangles on the right sit at the Figma frame's exact positions; the lattice is vectorised from the Figma artwork, so it stays sharp. The wordmark's baked-in "360° HYRBID PGDM" typo is replaced by live text, "360° Hybrid PGDM".
+- GenWe Playbook: the mascots and the sixth pillar (WeFlex) come from the updated Figma file; WeFlex is not in the content document.
 - Programme features: the photograph stands on its own and the eight features are equal tiles alternating white and purple, as the client asked.
 - White text on the green and purple buttons keeps the Figma gradients, deepened where the text sits so it stays readable (WCAG AA).
 - Accessibility: one page heading, labelled sections, keyboard-usable accordions and carousels, reduced-motion support (the pinned section becomes a normal list).

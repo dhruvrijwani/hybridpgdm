@@ -4,7 +4,7 @@
   <div class="wrap">
     <header class="sec-head rv">
       <p class="kicker kicker--lime"><?= e($s['kicker']) ?></p>
-      <h2 class="h2 h2--xl" id="evolve-title"><?= e($s['title']) ?></h2>
+      <h2 class="h2" id="evolve-title"><?= e($s['title']) ?></h2>
       <p class="lead"><?= e($s['lead']) ?></p>
     </header>
     <ol class="evolve__steps rv">
@@ -16,8 +16,8 @@
         </li>
       <?php endforeach; ?>
     </ol>
-    <div class="evolve__close rv">
-      <p><?= e($s['closing']) ?></p>
+    <div class="foot-row evolve__close rv">
+      <b><?= e($s['closing']) ?></b>
       <a class="btn btn--green" href="<?= e(apply_href()) ?>"><?= e($s['cta']) ?><?= icon('arrow') ?></a>
     </div>
   </div>

@@ -7,7 +7,7 @@
       <div class="legacy__era" aria-hidden="true"><span>Heritage</span><i></i><span>Today</span></div>
       <div class="legacy__copy">
         <p class="kicker kicker--lime"><?= e($s['kicker']) ?></p>
-        <h2 id="legacy-title"><?= e($s['title']) ?></h2>
+        <h2 class="h2" id="legacy-title"><?= e($s['title']) ?></h2>
         <p class="legacy__overlay"><?= e($s['overlay']) ?></p>
         <p class="legacy__text"><?= e($s['text']) ?></p>
       </div>

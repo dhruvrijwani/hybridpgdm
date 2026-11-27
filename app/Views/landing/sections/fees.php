@@ -1,7 +1,7 @@
 <?php /** 18 Fees and eligibility (shown above "Build to evolve"). @var array $s */ ?>
 <section class="sec sec--lav" id="fees" aria-labelledby="fees-title">
   <div class="wrap">
-    <header class="sec-head sec-head--split rv">
+    <header class="sec-head rv">
       <h2 class="h2" id="fees-title"><?= e($s['title']) ?></h2>
       <p class="lead lead--strong"><?= e($s['programme']) ?></p>
     </header>
@@ -12,7 +12,6 @@
           <?php foreach ($s['eligibility']['points'] as $pt): ?><li><?= icon('tick') ?><span><?= e($pt) ?></span></li><?php endforeach; ?>
         </ul>
         <p class="elig__note"><?= e($s['eligibility']['note']) ?></p>
-        <a class="btn btn--green" href="<?= e(apply_href()) ?>"><?= e($s['cta']) ?><?= icon('arrow') ?></a>
       </div>
       <div class="plans">
         <div class="plans__two">
@@ -39,6 +38,6 @@
         </div>
       </div>
     </div>
-    <div class="seo-note"><?php foreach ($s['seo'] as $p): ?><p><?= e($p) ?></p><?php endforeach; ?></div>
+    <?= $this->partial('partials/cta', ['label' => $s['cta']]) ?>
   </div>
 </section>

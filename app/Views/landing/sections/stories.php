@@ -1,7 +1,7 @@
 <?php /** 09 Impact stories: an editorial grid. Stories are placeholders until Welingkar supplies them. @var array $s */ ?>
 <section class="sec" id="stories" aria-labelledby="stories-title">
   <div class="wrap">
-    <header class="sec-head sec-head--split rv">
+    <header class="sec-head rv">
       <h2 class="h2" id="stories-title"><?= e($s['title']) ?></h2>
       <p class="lead lead--strong"><?= e($s['lead']) ?></p>
     </header>

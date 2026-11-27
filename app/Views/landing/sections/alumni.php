@@ -1,7 +1,7 @@
 <?php /** 15 Alumfluencers: quotes and figures from the current live page. @var array $s */ ?>
 <section class="sec sec--lav" id="alumni" aria-labelledby="alumni-title">
   <div class="wrap">
-    <header class="sec-head sec-head--split rv">
+    <header class="sec-head rv">
       <h2 class="h2" id="alumni-title"><?= e($s['title']) ?></h2>
       <p class="lead"><?= e($s['lead']) ?></p>
     </header>

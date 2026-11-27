@@ -5,7 +5,7 @@ $t = $c['thank_you'];
 ?>
 <section class="thanks">
   <div class="wrap thanks__in">
-    <img src="<?= asset('img/char-wesupport.svg') ?>" alt="" width="143" height="200">
+    <img src="<?= asset('img/mascot-wesupport.svg') ?>" alt="" width="154" height="145">
     <h1 class="h2"><?= e($t['title']) ?></h1>
     <p class="lead"><?= e($t['text']) ?></p>
     <div class="hero__cta">

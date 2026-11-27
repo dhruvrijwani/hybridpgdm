@@ -7,7 +7,7 @@
 ?>
 <section class="sec" id="programme" aria-labelledby="programme-title">
   <div class="wrap">
-    <header class="sec-head sec-head--split rv">
+    <header class="sec-head rv">
       <h2 class="h2" id="programme-title"><?= e($s['title']) ?></h2>
       <p class="lead"><?= e($s['intro']) ?></p>
     </header>

@@ -1,9 +1,9 @@
-<?php /** GenWe Playbook, from the client's Figma: illustrated pillar cards in a carousel. @var array $s */ ?>
+<?php /** GenWe Playbook, from the client's Figma: pillar cards with the GenWe mascots, in a carousel. @var array $s */ ?>
 <section class="sec playbook" id="playbook" aria-labelledby="playbook-title" data-carousel>
   <div class="wrap">
     <header class="playbook__head rv">
-      <div>
-        <h2 class="h2 h2--xl" id="playbook-title"><?= e($s['title']) ?></h2>
+      <div class="sec-head">
+        <h2 class="h2" id="playbook-title"><?= e($s['title']) ?></h2>
         <p class="lead"><?= e($s['lead']) ?></p>
       </div>
       <div class="car-nav car-nav--purple">
@@ -16,8 +16,8 @@
     <div class="playbook__track car-track" tabindex="0" aria-label="GenWe Playbook pillars">
       <?php foreach ($s['pillars'] as $p): ?>
         <article class="pb-card" tabindex="0">
-          <img class="pb-card__grid" src="<?= asset('img/tri-grid.svg') ?>" alt="" width="336" height="389" loading="lazy">
-          <img class="pb-card__char" src="<?= asset('img/' . $p['char']) ?>" alt="" width="140" height="200" loading="lazy">
+          <img class="pb-card__grid" src="<?= asset('img/pb-grid.svg') ?>" alt="" width="364" height="381" loading="lazy">
+          <img class="pb-card__char" src="<?= asset('img/' . $p['char']) ?>" alt="" width="154" height="145" loading="lazy">
           <div class="pb-card__body">
             <h3><?= e($p['name']) ?></h3>
             <ul class="pb-card__tags"><?php foreach ($p['tags'] as $t): ?><li><?= e($t) ?></li><?php endforeach; ?></ul>

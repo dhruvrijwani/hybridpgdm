@@ -1,9 +1,9 @@
 <?php /** 06 Who should apply: "You are GenWe". @var array $s */ ?>
 <section class="sec sec--lime" id="who" aria-labelledby="who-title">
   <div class="wrap">
-    <header class="sec-head sec-head--split rv">
-      <div><p class="kicker"><?= e($s['kicker']) ?></p><h2 class="h2 who__title" id="who-title"><?= e($s['title']) ?></h2></div>
-      <a class="btn btn--green who__cta" href="<?= e(apply_href()) ?>">Apply Now<?= icon('arrow') ?></a>
+    <header class="sec-head rv">
+      <p class="kicker"><?= e($s['kicker']) ?></p>
+      <h2 class="h2" id="who-title"><?= e($s['title']) ?></h2>
     </header>
     <ul class="who rv" tabindex="0" aria-label="Who the programme is for">
       <?php foreach ($s['personas'] as $i => $p): ?>
@@ -20,5 +20,6 @@
       <?php endforeach; ?>
     </ul>
     <p class="swipe-hint"><?= icon('swipe') ?>Swipe to see all five</p>
+    <?= $this->partial('partials/cta', ['label' => 'Apply Now']) ?>
   </div>
 </section>

@@ -3,11 +3,11 @@
 $specs = $page->section('specialisations')['items'] ?? [];
 ?>
 <section class="sec sec--lav" id="curriculum" aria-labelledby="curr-title">
-  <div class="wrap curr">
+  <div class="wrap">
+  <div class="curr">
     <header class="curr__head rv">
-      <h2 class="h2 h2--xl" id="curr-title"><?= e($s['title']) ?></h2>
+      <h2 class="h2" id="curr-title"><?= e($s['title']) ?></h2>
       <p class="lead"><?= e($s['lead']) ?></p>
-      <a class="btn btn--green" href="<?= e(apply_href()) ?>"><?= e($s['cta']) ?><?= icon('arrow') ?></a>
     </header>
     <div class="qi rv" data-accordion>
       <?php foreach ($s['questions'] as $i => $q): $open = $i === 0; $id = 'qi-' . ($i + 1); ?>
@@ -36,5 +36,7 @@ $specs = $page->section('specialisations')['items'] ?? [];
         </div>
       <?php endforeach; ?>
     </div>
+  </div>
+  <?= $this->partial('partials/cta', ['label' => $s['cta']]) ?>
   </div>
 </section>

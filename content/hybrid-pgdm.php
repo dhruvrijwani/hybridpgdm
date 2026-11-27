@@ -23,7 +23,7 @@ return [
     'order' => [
         'hero', 'proof', 'programme', 'harvard', 'accolades', 'who', 'comparison', 'why',
         'stories', 'fees', 'evolve', 'learn', 'playbook', 'certifications', 'specialisations',
-        'legacy', 'alumni', 'steps', 'curriculum', 'faq',
+        'legacy', 'alumni', 'steps', 'curriculum', 'faq', 'seo',
     ],
 
     'nav' => [
@@ -31,7 +31,7 @@ return [
         ['label' => 'About',                    'href' => '#legacy'],
         ['label' => 'Experience',               'href' => '#learn'],
         ['label' => 'Admission & fees',         'href' => '#fees'],
-        ['label' => 'Alumni & Student Stories', 'href' => '#stories'],
+        ['label' => 'Alumni & student stories', 'href' => '#stories'],
     ],
 
     /* 1 ─ Hero (Figma: "Landing page final") */
@@ -39,23 +39,22 @@ return [
         'label'    => 'Welingkar Institute of Management',   // the page's H1
         'h1'       => 'We are GenWe',
         'sub'      => '360° Hybrid PGDM',
-        'chips'    => ['2-Year Programme', 'AICTE Approved', '18 Specialisations', 'AI-first curriculum'],
-        'harvard'  => '42 Interactive Harvard Courses',
-        'tags'     => ['Global meets future', 'Largest network', 'Multi-modal learning', 'Rankings'],
+        'chips'    => ['2-year programme', 'AI-first curriculum'],
+        'harvard'  => '42 interactive Harvard courses',
+        'tags'     => ['Global meets future', 'Largest network', 'Multi-modal learning'],
         'trust'    => [
             ['logo' => 'logo-aicte.webp', 'alt' => 'AICTE', 'text' => 'Recognised by AICTE, Government of India.'],
             ['logo' => 'logo-acbsp.webp', 'alt' => 'ACBSP', 'text' => 'A global business education accreditation'],
         ],
         'cta'      => 'Apply Now',
         'cta_alt'  => 'Download Brochure',
-        'seo_note' => 'For learners comparing an online MBA program with a Hybrid PGDM, Welingkar Institute of Management provides programme information to help you review the learning format, curriculum and qualification. If you are exploring an online PGDM in Mumbai, check the official programme details before applying.',
     ],
 
     /* 2 ─ Proof points (Figma) */
     'proof' => [
-        ['value' => '40',   'suffix' => '',  'label' => 'Years of Welingkar Legacy'],
-        ['value' => '1.5',  'suffix' => 'L', 'label' => 'Alumni Community'],
-        ['value' => '18',   'suffix' => '',  'label' => 'Future-forward Specialisations'],
+        ['value' => '40',   'suffix' => '',  'label' => 'Years of Welingkar legacy'],
+        ['value' => '1.5',  'suffix' => 'L', 'label' => 'Alumni community'],
+        ['value' => '18',   'suffix' => '',  'label' => 'Future-forward specialisations'],
     ],
 
     /* 3 ─ Programme */
@@ -65,14 +64,14 @@ return [
         'image' => ['src' => 'photo-classroom.webp', 'alt' => 'Students in a WeSchool classroom'],
         'image_caption' => 'Learning at WeSchool',
         'features' => [
-            ['icon' => 'experiential', 'title' => 'Experiential Learning',            'text' => 'Go beyond course material through workshops and practical learning experiences.'],
-            ['icon' => 'factory',      'title' => 'Workshops & Industry Visits',      'text' => 'Extend classroom learning through workshops, industry visits and simulation-based activities.'],
-            ['icon' => 'book',         'title' => 'Cutting-Edge Curriculum',          'text' => 'Study through a contemporary management curriculum supported by relevant case studies and practical learning.'],
+            ['icon' => 'experiential', 'title' => 'Experiential learning',            'text' => 'Go beyond course material through workshops and practical learning experiences.'],
+            ['icon' => 'factory',      'title' => 'Workshops & industry visits',      'text' => 'Extend classroom learning through workshops, industry visits and simulation-based activities.'],
+            ['icon' => 'book',         'title' => 'Cutting-edge curriculum',          'text' => 'Study through a contemporary management curriculum supported by relevant case studies and practical learning.'],
             ['icon' => 'people',       'title' => 'Personal Contact Programs',        'text' => 'Opt for Personal Contact Programs for additional academic interaction.'],
-            ['icon' => 'mic',          'title' => 'Learn from Industry Experts',      'text' => 'Gain learning exposure through online and offline training led by industry professionals.'],
-            ['icon' => 'clock',        'title' => 'Flexible Lecture & Exam Timings',  'text' => 'Manage your learning around your professional and personal commitments.'],
-            ['icon' => 'always',       'title' => '24/7 Learning Access',             'text' => 'Access your online PGDM learning content whenever it fits your schedule.'],
-            ['icon' => 'screen',       'title' => 'Virtual Classroom',                'text' => 'Learn through an accessible online classroom environment for flexible PGDM learning.'],
+            ['icon' => 'mic',          'title' => 'Learn from industry experts',      'text' => 'Gain learning exposure through online and offline training led by industry professionals.'],
+            ['icon' => 'clock',        'title' => 'Flexible lecture & exam timings',  'text' => 'Manage your learning around your professional and personal commitments.'],
+            ['icon' => 'always',       'title' => '24/7 learning access',             'text' => 'Access your online PGDM learning content whenever it fits your schedule.'],
+            ['icon' => 'screen',       'title' => 'Virtual classroom',                'text' => 'Learn through an accessible online classroom environment for flexible PGDM learning.'],
         ],
         'cta' => 'Apply Now',
     ],
@@ -80,14 +79,14 @@ return [
     /* 4 ─ Harvard */
     'harvard' => [
         'kicker' => 'Harvard Business Impact',
-        'title'  => '42 Courses. Harvard Insights. More Ways to Grow.',
+        'title'  => '42 courses. Harvard insights. More ways to grow.',
         'intro'  => 'Complimentary access to 42 Harvard ManageMentor® certification courses during the first year, developed by Harvard Business Publishing.',
         'points' => [
-            ['icon' => 'tap',    'title' => 'Interactive Learning', 'text' => 'Explore management concepts through engaging, interactive learning experiences.'],
-            ['icon' => 'ribbon', 'title' => 'Expert Instruction',   'text' => 'Access management insights and learning content developed by Harvard Business Publishing.'],
-            ['icon' => 'target', 'title' => 'Actionable Learning',  'text' => 'Connect management concepts to practical workplace challenges.'],
-            ['icon' => 'check',  'title' => 'Self-Assessment',      'text' => 'Test your understanding and reflect on your learning progress.'],
-            ['icon' => 'badge',  'title' => 'Digital Badges',       'text' => 'Earn digital badges for completed courses to recognise and showcase your learning achievements.'],
+            ['icon' => 'tap',    'title' => 'Interactive learning', 'text' => 'Explore management concepts through engaging, interactive learning experiences.'],
+            ['icon' => 'ribbon', 'title' => 'Expert instruction',   'text' => 'Access management insights and learning content developed by Harvard Business Publishing.'],
+            ['icon' => 'target', 'title' => 'Actionable learning',  'text' => 'Connect management concepts to practical workplace challenges.'],
+            ['icon' => 'check',  'title' => 'Self-assessment',      'text' => 'Test your understanding and reflect on your learning progress.'],
+            ['icon' => 'badge',  'title' => 'Digital badges',       'text' => 'Earn digital badges for completed courses to recognise and showcase your learning achievements.'],
         ],
     ],
 
@@ -95,8 +94,8 @@ return [
     'accolades' => [
         'title'    => 'Recognised. Accredited. Assured.',
         'ranks'    => [
-            ['value' => '1',  'label' => 'Private Business School in Mumbai'],
-            ['value' => '14', 'label' => 'Private Business School in India'],
+            ['value' => '1',  'label' => 'Private business school in Mumbai'],
+            ['value' => '14', 'label' => 'Private business school in India'],
         ],
         'rank_source' => [
             ['name' => 'Business India', 'logo' => 'logo-business-india.webp'],
@@ -104,7 +103,7 @@ return [
         ],
         'seals'    => [
             ['logo' => 'logo-nirf.webp',  'name' => 'NIRF 2025',  'status' => 'Recognised'],
-            ['logo' => 'logo-acbsp.webp', 'name' => 'ACBSP Accreditation', 'status' => '10 Years'],
+            ['logo' => 'logo-acbsp.webp', 'name' => 'ACBSP accreditation', 'status' => '10 years'],
             ['logo' => 'logo-aicte.webp', 'name' => 'AICTE',      'status' => 'Approved'],
         ],
         'cta' => 'Apply Now',
@@ -115,25 +114,25 @@ return [
         'kicker'   => 'Who should apply',
         'title'    => 'You are GenWe',
         'personas' => [
-            ['title' => 'Working Professional', 'img' => 'persona-professional.webp', 'tone' => 'lime',   'text' => 'Strengthen your management capabilities with a flexible online PGDM while continuing your professional journey.'],
-            ['title' => 'Recent Graduate',      'img' => 'persona-graduate.webp',     'tone' => 'lilac',  'text' => 'Build a strong foundation through a flexible PGDM and prepare for the next stage of your career.'],
-            ['title' => 'Career Growth Seeker', 'img' => 'persona-growth.webp',       'tone' => 'green',  'text' => 'Add formal management education to your experience and prepare for your next career move through Online PGDM.'],
-            ['title' => 'Business Builder',     'img' => 'persona-builder.webp',      'tone' => 'purple', 'text' => 'Develop structured management knowledge to strengthen the way you build and manage your business through practical PGDM learning.'],
-            ['title' => 'Flexible Learner',     'img' => 'persona-flexible.webp',     'tone' => 'lav',    'text' => 'Pursue a PGDM through a flexible hybrid format that works around your existing commitments, with flexible online learning.'],
+            ['title' => 'Working professional', 'img' => 'persona-professional.webp', 'tone' => 'lime',   'text' => 'Strengthen your management capabilities with a flexible online PGDM while continuing your professional journey.'],
+            ['title' => 'Recent graduate',      'img' => 'persona-graduate.webp',     'tone' => 'lilac',  'text' => 'Build a strong foundation through a flexible PGDM and prepare for the next stage of your career.'],
+            ['title' => 'Career growth seeker', 'img' => 'persona-growth.webp',       'tone' => 'green',  'text' => 'Add formal management education to your experience and prepare for your next career move through Online PGDM.'],
+            ['title' => 'Business builder',     'img' => 'persona-builder.webp',      'tone' => 'purple', 'text' => 'Develop structured management knowledge to strengthen the way you build and manage your business through practical PGDM learning.'],
+            ['title' => 'Flexible learner',     'img' => 'persona-flexible.webp',     'tone' => 'lav',    'text' => 'Pursue a PGDM through a flexible hybrid format that works around your existing commitments, with flexible online learning.'],
         ],
     ],
 
     /* 7 ─ MBA vs PGDM */
     'comparison' => [
-        'title' => 'MBA vs PGDM: Which Keeps Pace With Business?',
+        'title' => 'MBA vs PGDM: Which keeps pace with business?',
         'lead'  => 'Both build management foundations. The difference lies in how the curriculum can respond to a changing business world.',
         'rows'  => [
             ['label' => 'Curriculum',         'mba' => 'University-led academic framework',                       'pgdm' => 'Greater curriculum flexibility within an autonomous management institute'],
-            ['label' => 'Industry Relevance', 'mba' => 'Follows the framework of the university offering the degree', 'pgdm' => 'Can be refreshed to reflect changing industry practices, technologies and business needs'],
-            ['label' => 'Learning Approach',  'mba' => 'Management concepts and academic learning',               'pgdm' => 'Greater emphasis on application, projects and industry exposure'],
+            ['label' => 'Industry relevance', 'mba' => 'Follows the framework of the university offering the degree', 'pgdm' => 'Can be refreshed to reflect changing industry practices, technologies and business needs'],
+            ['label' => 'Learning approach',  'mba' => 'Management concepts and academic learning',               'pgdm' => 'Greater emphasis on application, projects and industry exposure'],
             ['label' => 'Specialisation',     'mba' => 'Specialisations vary by university and programme',        'pgdm' => 'Focused specialisations and electives aligned with contemporary business functions'],
         ],
-        'approach_label' => 'Welingkar’s Approach',
+        'approach_label' => 'Welingkar’s approach',
         'approach'       => 'PGDM at Welingkar: Continuously evolving curriculum + technology-embedded education + application-oriented learning',
         'context'        => 'Welingkar’s current programme ecosystem demonstrates this through areas including <b>AI/ML, business analytics, digital marketing, technology, design thinking and emerging business practices</b>, within a contemporary Welingkar PGDM.',
         'closing'        => 'As business evolves, your management education should be flexible enough to keep pace.',
@@ -142,46 +141,46 @@ return [
 
     /* 8 ─ Why choose + programme highlights */
     'why' => [
-        'title' => 'Hybrid PGDM Built for the Real World.',
+        'title' => '360° Hybrid PGDM built for the real world.',
         'lead'  => 'Explore flexible management learning with the Welingkar PGDM at Welingkar Institute of Management.',
         'cards' => [
-            ['icon' => 'globe',   'title' => 'Earn a Global Career Advantage',          'text' => 'Strengthen your professional profile with globally recognised certifications like Harvard ManageMentor and prepare for leadership in international business environments.'],
-            ['icon' => 'growth',  'title' => 'Accelerate Career Growth & Opportunities', 'text' => 'Unlock opportunities for better roles, stronger salary potential and professional advancement across industries.'],
-            ['icon' => 'target',  'title' => 'Learn What the Industry Actually Demands', 'text' => 'Master data-driven decision-making, modern business frameworks and industry-relevant skills aligned with today’s evolving corporate landscape through the Welingkar PGDM.'],
-            ['icon' => 'network', 'title' => 'Build Powerful Industry Networks',         'text' => 'Connect with ambitious peers, experienced faculty, industry leaders and alumni to create opportunities that extend far beyond the classroom.'],
-            ['icon' => 'crown',   'title' => 'Become a World-Class Business Leader',     'text' => 'Develop the vision, adaptability and managerial expertise to lead teams, businesses and transformation in a global economy.'],
-            ['icon' => 'spark',   'title' => 'Gain the WeSchool Edge',                   'text' => 'Benefit from WeSchool’s industry-oriented learning approach, innovation-driven culture, strong corporate connections and respected brand credibility.'],
+            ['icon' => 'globe',   'title' => 'Earn a global career advantage',          'text' => 'Strengthen your professional profile with globally recognised certifications like Harvard ManageMentor and prepare for leadership in international business environments.'],
+            ['icon' => 'growth',  'title' => 'Accelerate career growth & opportunities', 'text' => 'Unlock opportunities for better roles, stronger salary potential and professional advancement across industries.'],
+            ['icon' => 'target',  'title' => 'Learn what the industry actually demands', 'text' => 'Master data-driven decision-making, modern business frameworks and industry-relevant skills aligned with today’s evolving corporate landscape through the Welingkar PGDM.'],
+            ['icon' => 'network', 'title' => 'Build powerful industry networks',         'text' => 'Connect with ambitious peers, experienced faculty, industry leaders and alumni to create opportunities that extend far beyond the classroom.'],
+            ['icon' => 'crown',   'title' => 'Become a world-class business leader',     'text' => 'Develop the vision, adaptability and managerial expertise to lead teams, businesses and transformation in a global economy.'],
+            ['icon' => 'spark',   'title' => 'Gain the WeSchool edge',                   'text' => 'Benefit from WeSchool’s industry-oriented learning approach, innovation-driven culture, strong corporate connections and respected brand credibility.'],
         ],
-        'highlights_title' => 'PROGRAM HIGHLIGHTS',
+        'highlights_title' => 'Program highlights',
         'highlights' => [
-            ['icon' => 'crown',  'title' => 'The Elite WeSchool Legacy',          'text' => 'Fast-track your career with an AICTE-approved qualification from a recognised management institution.'],
-            ['icon' => 'ribbon', 'title' => 'The Harvard Advantage',              'text' => 'Gain a competitive edge with access to Harvard ManageMentor (HMM) content and recognised certifications.'],
-            ['icon' => 'play',   'title' => 'The High-Tech "We-Learning" Ecosystem', 'text' => 'Access a 24/7 digital campus with on-demand WeTube video lectures, audiobooks and interactive e-learning kits. The flexible format supports online PGDM learning alongside your professional commitments.'],
-            ['icon' => 'mic',    'title' => 'Exclusive CXO Insights',             'text' => 'Explore real-world corporate strategy through exclusive WeLounge interviews with global business leaders and entrepreneurs.'],
-            ['icon' => 'campus', 'title' => 'Campus Immersions',                  'text' => 'Combine online flexibility with optional weekend workshops, business simulations and valuable on-campus networking. This hybrid approach brings together digital learning and practical campus experiences.'],
-            ['icon' => 'spark',  'title' => 'Zero Entrance Exam Friction',        'text' => 'Focus on your management learning journey with a profile-based admission process and an examination structure designed for busy professionals. Applicants can explore the Welingkar Hybrid PGDM without the CAT/GMAT route, subject to the programme’s stated eligibility and admission criteria.'],
+            ['icon' => 'crown',  'title' => 'The elite WeSchool legacy',          'text' => 'Fast-track your career with an AICTE-approved qualification from a recognised management institution.'],
+            ['icon' => 'ribbon', 'title' => 'The Harvard advantage',              'text' => 'Gain a competitive edge with access to Harvard ManageMentor (HMM) content and recognised certifications.'],
+            ['icon' => 'play',   'title' => 'The high-tech "We-Learning" ecosystem', 'text' => 'Access a 24/7 digital campus with on-demand WeTube video lectures, audiobooks and interactive e-learning kits. The flexible format supports online PGDM learning alongside your professional commitments.'],
+            ['icon' => 'mic',    'title' => 'Exclusive CXO insights',             'text' => 'Explore real-world corporate strategy through exclusive WeLounge interviews with global business leaders and entrepreneurs.'],
+            ['icon' => 'campus', 'title' => 'Campus immersions',                  'text' => 'Combine online flexibility with optional weekend workshops, business simulations and valuable on-campus networking. This hybrid approach brings together digital learning and practical campus experiences.'],
+            ['icon' => 'spark',  'title' => 'Zero entrance exam friction',        'text' => 'Focus on your management learning journey with a profile-based admission process and an examination structure designed for busy professionals. Applicants can explore the Welingkar Hybrid PGDM without the CAT/GMAT route, subject to the programme’s stated eligibility and admission criteria.'],
         ],
         'cta' => 'Apply Now',
     ],
 
     /* 9 ─ Impact stories (placeholders until Welingkar supplies the stories) */
     'stories' => [
-        'title' => 'Impact Stories',
+        'title' => 'Impact stories',
         'lead'  => 'Hear from our Alumfluencers',
         'items' => [
-            ['img' => 'story-1.webp', 'title' => 'The Hybrid Experience',   'quote' => 'The weekend workshops and live sessions let me keep my job and still learn with people from very different industries.', 'name' => 'Learner name', 'role' => 'Designation, Organisation', 'video' => '', 'placeholder' => true],
-            ['img' => 'story-2.webp', 'title' => 'The Hybrid PGDM Impact',  'quote' => 'I could plan my exams around work. The case studies were from businesses I deal with every week.',                       'name' => 'Learner name', 'role' => 'Designation, Organisation', 'video' => '', 'placeholder' => true],
-            ['img' => 'story-3.webp', 'title' => 'The Career Leap',         'quote' => 'The Harvard ManageMentor courses in year one gave me a vocabulary I now use in every review meeting.',                    'name' => 'Learner name', 'role' => 'Designation, Organisation', 'video' => '', 'placeholder' => true],
+            ['img' => 'story-1.webp', 'title' => 'The hybrid experience',   'quote' => 'The weekend workshops and live sessions let me keep my job and still learn with people from very different industries.', 'name' => 'Learner name', 'role' => 'Designation, Organisation', 'video' => '', 'placeholder' => true],
+            ['img' => 'story-2.webp', 'title' => 'The 360° Hybrid PGDM impact',  'quote' => 'I could plan my exams around work. The case studies were from businesses I deal with every week.',                       'name' => 'Learner name', 'role' => 'Designation, Organisation', 'video' => '', 'placeholder' => true],
+            ['img' => 'story-3.webp', 'title' => 'The career leap',         'quote' => 'The Harvard ManageMentor courses in year one gave me a vocabulary I now use in every review meeting.',                    'name' => 'Learner name', 'role' => 'Designation, Organisation', 'video' => '', 'placeholder' => true],
         ],
         'cta' => 'Apply Now',
     ],
 
     /* 18 ─ Fees and eligibility (placed above "Build to evolve", as the content document asks) */
     'fees' => [
-        'title'     => 'Flexible Payment Options That Fit Your Journey',
-        'programme' => '2-Year Welingkar Hybrid PGDM',
+        'title'     => 'Flexible payment options that fit your journey',
+        'programme' => '2-year Welingkar 360° Hybrid PGDM',
         'eligibility' => [
-            'title'  => 'Eligibility for Welingkar PGDM Hybrid Course',
+            'title'  => 'Eligibility for Welingkar PGDM Hybrid course',   // keyword: no 360° here
             'points' => [
                 'Graduation from a recognized Indian university',
                 'Graduation from International university recognized by IGNOU/UGC/AIU/state universities or associations such as AMBA, AACSB, or EQUIS',
@@ -189,7 +188,7 @@ return [
             'note'   => 'You don’t need to undertake any entrance exam or GD to apply for a Hybrid PGDM at WeSchool. You only need to meet the graduation criteria.',
         ],
         'options' => [
-            ['label' => 'Option 01', 'price' => '₹1,26,000', 'text' => 'Programme Fee at Enrolment'],
+            ['label' => 'Option 01', 'price' => '₹1,26,000', 'text' => 'Programme fee at enrolment'],
             ['label' => 'Option 02', 'years' => [['Year 1', '₹66,000'], ['Year 2', '₹65,000']], 'text' => 'Pay-as-you-progress for greater flexibility while pursuing the Welingkar PGDM.'],
         ],
         'pcp' => [
@@ -197,19 +196,15 @@ return [
             'lines' => [['₹3,600', 'at the time of admission'], ['₹400', 'per subject if PCP is opted for later.']],
         ],
         'methods' => [
-            ['icon' => 'card', 'title' => 'Online Admission',    'text' => 'Net Banking | Debit Card | Credit Card'],
-            ['icon' => 'bank', 'title' => 'On-Campus Admission', 'text' => 'Cheque | Demand Draft | Bank Transfer'],
-        ],
-        'seo' => [
-            'When comparing online MBA programs, an online MBA program or an MBA degree online, look at the qualification awarded, curriculum, delivery format, eligibility and fees. Learners also researching executive MBA programs should compare entry requirements and work-experience expectations. Searches for the best MBA online or best MBA programs can help build a shortlist, but decisions should be based on official programme details and personal goals.',
-            'A shortlist of online MBA programs and executive MBA programs should be assessed against the same criteria. The best MBA online option and the best MBA programs for you depend on your goals, while an MBA degree online may have a different structure and recognition context from a PGDM.',
+            ['icon' => 'card', 'title' => 'Online admission',    'text' => 'Net Banking | Debit Card | Credit Card'],
+            ['icon' => 'bank', 'title' => 'On-campus admission', 'text' => 'Cheque | Demand Draft | Bank Transfer'],
         ],
         'cta' => 'Apply Now',
     ],
 
     /* 10 ─ Build to evolve */
     'evolve' => [
-        'kicker' => 'Build to Evolve',
+        'kicker' => 'Build to evolve',
         'title'  => 'Built for what’s next',
         'lead'   => 'Build the knowledge, skills and confidence to take on your next professional challenge through practical Welingkar PGDM management education.',
         'points' => [
@@ -224,15 +219,15 @@ return [
 
     /* 11 ─ How you'll learn (pinned while the six steps play) */
     'learn' => [
-        'kicker' => 'How You’ll Learn',
-        'title'  => 'Hybrid That Actually Works.',
+        'kicker' => 'How you’ll learn',
+        'title'  => 'Hybrid that actually works.',
         'lead'   => 'Not just videos and PDFs. This is active, immersive management education through the Welingkar Hybrid PGDM, engineered for flexibility without compromising depth.',
         'steps'  => [
-            ['tag' => 'Online',   'img' => 'learn-online.webp',   'title' => 'Online Learning Core',   'text' => 'Live online interactive lectures, webinars, WeTube video lectures and an e-learning toolkit: access flexible online PGDM learning at your pace, on your schedule.'],
-            ['tag' => 'Campus',   'img' => 'learn-campus.webp',   'title' => 'On-Campus Immersion',    'text' => 'Personal Contact Programs bring you to campus for workshops, collaborative sessions and direct faculty interaction as part of the Welingkar Hybrid PGDM.'],
-            ['tag' => 'Industry', 'img' => 'learn-industry.webp', 'title' => 'Industry Exposure',      'text' => 'Live industry visits, experiential learning programmes and Newswire services keep you connected to the real business world through the Welingkar PGDM.'],
-            ['tag' => 'Projects', 'img' => 'learn-projects.webp', 'title' => 'Projects & Assessment',  'text' => 'Exams, viva and project submissions across two years, with a 4-year window to complete the programme at your own pace.'],
-            ['tag' => 'Peers',    'img' => 'learn-peers.webp',    'title' => 'Peer-to-Peer Learning',  'text' => 'Collaborative knowledge sharing that brings diverse perspectives and experiences into the learning process.'],
+            ['tag' => 'Online',   'img' => 'learn-online.webp',   'title' => 'Online learning core',   'text' => 'Live online interactive lectures, webinars, WeTube video lectures and an e-learning toolkit: access flexible online PGDM learning at your pace, on your schedule.'],
+            ['tag' => 'Campus',   'img' => 'learn-campus.webp',   'title' => 'On-campus immersion',    'text' => 'Personal Contact Programs bring you to campus for workshops, collaborative sessions and direct faculty interaction as part of the Welingkar Hybrid PGDM.'],
+            ['tag' => 'Industry', 'img' => 'learn-industry.webp', 'title' => 'Industry exposure',      'text' => 'Live industry visits, experiential learning programmes and Newswire services keep you connected to the real business world through the Welingkar PGDM.'],
+            ['tag' => 'Projects', 'img' => 'learn-projects.webp', 'title' => 'Projects & assessment',  'text' => 'Exams, viva and project submissions across two years, with a 4-year window to complete the programme at your own pace.'],
+            ['tag' => 'Peers',    'img' => 'learn-peers.webp',    'title' => 'Peer-to-peer learning',  'text' => 'Collaborative knowledge sharing that brings diverse perspectives and experiences into the learning process.'],
             ['tag' => 'Upskill',  'img' => 'learn-upskill.webp',  'title' => 'We Upskill',             'text' => 'Interactive virtual sessions to sharpen soft skills, alongside business simulations, movie-based case studies and experiential workshops.'],
         ],
         'cta' => 'Apply Now',
@@ -243,29 +238,32 @@ return [
         'title' => 'GenWe Playbook',
         'lead'  => 'The people, tools and experiences that power your journey.',
         'pillars' => [
-            ['name' => 'WeAhead',   'char' => 'char-weahead.svg',   'text' => 'Develop an adaptable mindset with global management knowledge and future-focused learning.',
+            ['name' => 'WeAhead',   'char' => 'mascot-weahead.svg',   'text' => 'Develop an adaptable mindset with global management knowledge and future-focused learning.',
              'tags' => ['42 Harvard ManageMentor courses', 'Harvard Business Publishing simulations', '18 industry specialisations']],
-            ['name' => 'WeGuild',   'char' => 'char-weguild.svg',   'text' => 'Build meaningful relationships that open doors to new perspectives, opportunities and collaborations.',
+            ['name' => 'WeGuild',   'char' => 'mascot-weguild.svg',   'text' => 'Build meaningful relationships that open doors to new perspectives, opportunities and collaborations.',
              'tags' => ['Industry visits', 'Train with industry leaders', '1.5L Alumni community', 'Peer-to-peer exchange']],
-            ['name' => 'WeUpskill', 'char' => 'char-weupskill.svg', 'text' => 'Learn at your own pace and earn additional credentials in emerging areas such as AI and finance.',
+            ['name' => 'WeUpskill', 'char' => 'mascot-weupskill.svg', 'text' => 'Learn at your own pace and earn additional credentials in emerging areas such as AI and finance.',
              'tags' => ['Career + life-skills workshops', '500+ WeTube videos', 'Bloomberg certificates', 'Weekend workshops']],
-            ['name' => 'WeGuide',   'char' => 'char-weguide.svg',   'text' => 'Navigate your next career move with insights into industry trends and what employers look for.',
+            ['name' => 'WeGuide',   'char' => 'mascot-weguide.svg',   'text' => 'Navigate your next career move with insights into industry trends and what employers look for.',
              'tags' => ['Career toolkit', '40+ Industry sectors', 'Vacancy information', 'Interview samples']],
-            ['name' => 'WeSupport', 'char' => 'char-wesupport.svg', 'text' => 'Get dedicated guidance and seamless assistance at every stage, from enrolment to graduation.',
+            ['name' => 'WeSupport', 'char' => 'mascot-wesupport.svg', 'text' => 'Get dedicated guidance and seamless assistance at every stage, from enrolment to graduation.',
              'tags' => ['One ERP, admission to certificate', 'Success counsellors', '24x7 helpline']],
+            // Sixth pillar: from the client's updated Figma file (not in the content document)
+            ['name' => 'WeFlex',    'char' => 'mascot-weflex.svg',    'text' => 'Master core competence by learning from everywhere at your own pace with WeLive and WeLearn.',
+             'tags' => ['Virtual live lectures with WeLive', '24x7 recorded lectures with WeLearn']],
         ],
         'cta' => 'Apply Now',
     ],
 
     /* 12 ─ Two certifications */
     'certifications' => [
-        'title' => 'Two Years. Two Certifications.',
+        'title' => 'Two years. Two certifications.',
         'lead'  => 'Build your management qualification progressively through the two-year Welingkar PGDM, with a certification milestone at the end of each year.',
         'years' => [
             ['year' => '01', 'title' => 'Advance Diploma in Business Administration', 'text' => 'Successfully complete the first year, including the required examinations, viva and project submission, and receive the Advance Diploma in Business Administration in soft-copy format.', 'format' => 'Soft copy'],
             ['year' => '02', 'title' => 'PGDM (Specialization) Hybrid Certification',  'text' => 'Complete the second year requirements and receive the PGDM (Specialization) Hybrid certification as a hard copy.', 'format' => 'Hard copy'],
         ],
-        'milestone' => 'One Programme. Two Milestones.',
+        'milestone' => 'One programme. Two milestones.',
         'condition' => 'Both certifications are awarded upon successful completion of the required examinations, viva and projects.',
         'cta'       => 'Apply Now',
     ],
@@ -274,7 +272,7 @@ return [
     'specialisations' => [
         'kicker' => 'Find your future fit',
         'badge'  => 'Industry 5.0-aligned',
-        'title'  => '18 Specialisations. One Programme. Your Direction.',
+        'title'  => '18 specialisations. One programme. Your direction.',
         'lead'   => 'Choose the management specialisation that aligns with the area you want to build your expertise in through the Welingkar PGDM.',
         'detail' => 'Welingkar Institute of Management currently offers 18 Hybrid PGDM specialisations across management, business, industry and functional domains.',
         'items'  => [
@@ -302,16 +300,16 @@ return [
 
     /* 14 ─ Legacy */
     'legacy' => [
-        'kicker'   => 'The WeSchool Legacy',
-        'title'    => '40+ Years of Welingkar',
-        'overlay'  => 'A Legacy of Learning. Built for What’s Next.',
+        'kicker'   => 'The WeSchool legacy',
+        'title'    => '40+ years of Welingkar',
+        'overlay'  => 'A legacy of learning. Built for what’s next.',
         'text'     => 'From the S.P. Mandali Trust, one of India’s oldest educational trusts, WeSchool has grown into a recognised name in progressive management education. With generations of alumni and a continued focus on evolving business needs, its approach brings legacy and contemporary thinking together.',
         'past'     => ['src' => 'photo-library.webp',    'alt' => 'The WeSchool library'],
         'now'      => ['src' => 'photo-auditorium.webp', 'alt' => 'A packed WeSchool auditorium session'],
         'proof'    => [
-            ['value' => '100+ YEARS', 'text' => 'S.P. Mandali Trust'],
-            ['value' => 'NIRF TOP 100', 'text' => 'Consistently ranked among India’s top institutions'],
-            ['value' => 'PROGRESSIVE MANAGEMENT EDUCATION', 'text' => 'Built around an evolving business landscape'],
+            ['value' => '100+ years', 'text' => 'S.P. Mandali Trust'],
+            ['value' => 'NIRF top 100', 'text' => 'Consistently ranked among India’s top institutions'],
+            ['value' => 'Progressive management education', 'text' => 'Built around an evolving business landscape'],
         ],
         'closing' => 'A legacy that keeps moving forward.',
         'cta'     => 'Apply Now',
@@ -338,20 +336,20 @@ return [
 
     /* 16 ─ Admission steps */
     'steps' => [
-        'title' => 'A Simple 4-Step Journey to Your Welingkar PGDM',
+        'title' => 'A simple 4-step journey to your Welingkar PGDM',
         'items' => [
-            ['icon' => 'register', 'title' => 'Register Your Interest',          'text' => 'Connect with the Welingkar admissions team and understand the Welingkar PGDM with guidance from a counsellor.'],
-            ['icon' => 'docs',     'title' => 'Complete Your Application',       'text' => 'Register for the programme and submit the required academic, identity and supporting documents for your PGDM application.'],
-            ['icon' => 'pay',      'title' => 'Choose Your Payment Option',      'text' => 'Select the payment method that works for you and complete the applicable programme fee payment.'],
-            ['icon' => 'confirm',  'title' => 'Get Your Admission Confirmation', 'text' => 'Once your documents and payment are verified, receive confirmation of your admission.'],
+            ['icon' => 'register', 'title' => 'Register your interest',          'text' => 'Connect with the Welingkar admissions team and understand the Welingkar PGDM with guidance from a counsellor.'],
+            ['icon' => 'docs',     'title' => 'Complete your application',       'text' => 'Register for the programme and submit the required academic, identity and supporting documents for your PGDM application.'],
+            ['icon' => 'pay',      'title' => 'Choose your payment option',      'text' => 'Select the payment method that works for you and complete the applicable programme fee payment.'],
+            ['icon' => 'confirm',  'title' => 'Get your admission confirmation', 'text' => 'Once your documents and payment are verified, receive confirmation of your admission.'],
         ],
-        'journey' => ['Register', 'Submit Documents', 'Payment', 'Confirmation'],
+        'journey' => ['Register', 'Submit documents', 'Payment', 'Confirmation'],
         'cta'     => 'Apply Now',
     ],
 
     /* 17 ─ What you'll learn */
     'curriculum' => [
-        'title' => 'What You’ll Learn',
+        'title' => 'What you’ll learn',
         'lead'  => 'Explore how your learning journey is structured, from the first semester to your specialisation and beyond.',
         'semesters' => [
             ['Semester 01', '6', 'subjects'],
@@ -361,7 +359,7 @@ return [
         ],
         'questions' => [
             ['q' => 'What does the two-year journey look like?', 'type' => 'semesters', 'a' => 'The programme runs across four semesters, with the specialisation component coming into focus in Year 2.'],
-            ['q' => 'Where do I build my specialisation?',       'type' => 'specialisations', 'a' => '<b>Year 2 is where you specialise.</b> Choose from <b>18 specialisations</b> across areas including Marketing, Finance, Human Resources, Operations, Supply Chain Management, E-Business, International Business, Media &amp; Advertising, Healthcare, Hospitality and IT Project Management.', 'link' => 'Explore 18 Specialisations'],
+            ['q' => 'Where do I build my specialisation?',       'type' => 'specialisations', 'a' => '<b>Year 2 is where you specialise.</b> Choose from <b>18 specialisations</b> across areas including Marketing, Finance, Human Resources, Operations, Supply Chain Management, E-Business, International Business, Media &amp; Advertising, Healthcare, Hospitality and IT Project Management.', 'link' => 'Explore 18 specialisations'],
             ['q' => 'How can I access my learning material?',    'a' => '<b>Multiple modes support the hybrid learning experience</b>, giving students access to programme learning material across different formats.'],
             ['q' => 'What comes with the E-Learning Toolkit?',   'a' => 'Additional academic support is available through the <b>E-Learning Toolkit in your student login</b>. It gives you access to supplementary academic resources alongside your programme.'],
             ['q' => 'How do I stay connected to my field?',      'a' => 'The <b>Newswire Service</b> provides specialisation-wise news and developments from around the globe, helping you stay updated with what is happening in your chosen field.'],
@@ -371,7 +369,7 @@ return [
 
     /* 19 ─ FAQ (also published as FAQPage structured data) */
     'faq' => [
-        'title' => 'Frequently Asked Questions',
+        'title' => 'Frequently asked questions',
         'lead'  => 'Everything you need to know before you apply for the Welingkar PGDM.',
         'items' => [
             ['cat' => 'Programme', 'q' => 'How long is the programme?', 'a' => [
@@ -386,23 +384,23 @@ return [
                 'Yes. The programme remains relevant for learners looking to strengthen their management capabilities through structured, practical learning. The Welingkar PGDM combines contemporary management learning with flexible online PGDM access, making it an option for professionals evaluating current MBA courses and other management programmes.',
                 'In 2026, professionals comparing online MBA programs, an online MBA program, executive MBA programs and other MBA courses should assess how well each option matches their career goals, schedule and preferred learning experience. Searches for best MBA online, best MBA programs and MBA degree online can be a starting point for comparison, but the qualification, curriculum and learning support matter more than the search label. Welingkar Institute of Management offers the Hybrid PGDM as a management education pathway for learners who want structured learning with flexibility.',
             ]],
-            ['cat' => 'Eligibility & Admission', 'q' => 'Who is eligible to apply?', 'a' => [
+            ['cat' => 'Eligibility & admission', 'q' => 'Who is eligible to apply?', 'a' => [
                 'Graduates who meet the stated eligibility criteria can apply for the Welingkar Hybrid PGDM. The programme is designed for learners looking to build formal management knowledge while continuing their professional journey.',
                 'People searching for an MBA for working professionals, an online MBA, or online MBA programs should first check the stated eligibility criteria and the qualification awarded by each institution. The same applies when comparing executive MBA programs, the best MBA programs or an MBA degree online: eligibility, admission requirements and programme structure can differ. Welingkar Institute of Management applicants should refer to the official admission requirements for the Hybrid PGDM rather than relying only on general search terms.',
             ]],
-            ['cat' => 'Eligibility & Admission', 'q' => 'Is there an entrance exam or GD?', 'a' => [
+            ['cat' => 'Eligibility & admission', 'q' => 'Is there an entrance exam or GD?', 'a' => [
                 'No entrance exam or GD is required, subject to the stated graduation criteria. Eligible applicants can proceed through the programme\'s admission process and pursue the Welingkar PGDM without a separate entrance-test requirement.',
                 'Applicants comparing an online MBA program, online MBA programs and executive MBA programs should check the admission process for each specific course, since entrance requirements can vary. Whether you are researching the best MBA online options, the best MBA programs or other MBA courses, confirm the eligibility rules directly with the institution. For the Welingkar PGDM, applicants should follow the stated Hybrid PGDM admission process.',
             ]],
-            ['cat' => 'Eligibility & Admission', 'q' => 'What documents are required for admission?', 'a' => [
+            ['cat' => 'Eligibility & admission', 'q' => 'What documents are required for admission?', 'a' => [
                 'Applicants need to submit the required academic, identity and supporting documents as part of the admission process. These documents are reviewed as part of the application and admission confirmation process for the Welingkar PGDM.',
                 'If you are comparing online MBA programs, an online MBA, executive MBA programs or other MBA courses, review each institution\'s document checklist before applying. Search phrases such as MBA degree online, best MBA online and best MBA programs do not indicate identical admission requirements across providers. Welingkar Institute of Management applicants should use the official checklist for the Hybrid PGDM and submit the documents requested through the admission process.',
             ]],
-            ['cat' => 'Learning & Curriculum', 'q' => 'How are lectures conducted?', 'a' => [
+            ['cat' => 'Learning & curriculum', 'q' => 'How are lectures conducted?', 'a' => [
                 'Lectures are delivered through the Hybrid PGDM learning format, combining accessible online classroom learning with interactive academic engagement. This gives learners the flexibility associated with online PGDM courses while retaining opportunities for direct interaction through the Welingkar Hybrid PGDM.',
                 'Learners comparing online MBA programs, an online MBA program, and MBA online learning can look at how lectures, faculty interaction and practical application are organised. Those researching executive MBA programs, the best MBA online options or the best MBA programs should compare the actual learning experience rather than relying on labels alone. Distance learning, pgdm online courses and pgdm distance learning are related search terms, but the Welingkar Hybrid PGDM has its own stated format and programme structure.',
             ]],
-            ['cat' => 'Fees & Payment', 'q' => 'Are payment options available?', 'a' => [
+            ['cat' => 'Fees & payment', 'q' => 'Are payment options available?', 'a' => [
                 'The programme follows a structured fee and payment process, with options designed to provide greater flexibility for learners. The pay-as-you-progress approach can make it easier to manage programme payments while pursuing the Welingkar PGDM.',
                 'When comparing online MBA programs, an online MBA, executive MBA programs or other MBA courses, review the total fee, payment schedule and any applicable terms before making a decision. People researching the best MBA online, best MBA programs or an MBA degree online should compare the overall cost alongside curriculum, support and qualification. For the Welingkar PGDM, applicants should confirm the current fee and payment details through the official programme information.',
             ]],
@@ -421,14 +419,23 @@ return [
         ],
     ],
 
+    /* SEO copy at the very end of the page (client feedback). The client's keyword list goes in 'keywords'. */
+    'seo' => [
+        'paras' => [
+            'When comparing online MBA programs, an online MBA program or an MBA degree online, look at the qualification awarded, curriculum, delivery format, eligibility and fees. Learners also researching executive MBA programs should compare entry requirements and work-experience expectations. Searches for the best MBA online or best MBA programs can help build a shortlist, but decisions should be based on official programme details and personal goals.',
+            'A shortlist of online MBA programs and executive MBA programs should be assessed against the same criteria. The best MBA online option and the best MBA programs for you depend on your goals, while an MBA degree online may have a different structure and recognition context from a PGDM.',
+        ],
+        'keywords' => [],
+    ],
+
     'contact' => [
-        'title'  => 'Contact Us',
+        'title'  => 'Contact us',
         'phones' => ['18005478003', '1800123500047'],
         'email'  => 'hybrid.yangpoo@welingkarmail.org',
     ],
 
     'thank_you' => [
         'title' => 'Thank you. We’ve received your enquiry.',
-        'text'  => 'A Welingkar admissions counsellor will call you shortly to take you through the Hybrid PGDM. Meanwhile, you can download the brochure or go back to the programme page.',
+        'text'  => 'A Welingkar admissions counsellor will call you shortly to take you through the 360° Hybrid PGDM. Meanwhile, you can download the brochure or go back to the programme page.',
     ],
 ];
